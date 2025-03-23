@@ -1,0 +1,227 @@
+
+<!DOCTYPE HTML>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+        <title>Белорусский государственный университет информатики и радиоэлектроники</title>
+        <link href="https://fastly.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    
+        <link href="flex.css" rel="stylesheet" media="(max-width:1280px)"> 
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <style>
+        @import url(dop.css) (min-width: 480px) and (max-width: 768px);
+        p {
+            font-size: 20px;
+        }
+        .element1, .element2 {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            align-items: stretch;
+            justify-content: space-between;
+        }
+
+        @media (min-width: 560px) {
+            .element1, .element2 {
+                flex-flow: row wrap;
+            }
+        }  
+
+        @media (max-width: 560px) { 
+            .element2 > div {
+                margin-bottom: 20px;
+            }
+        }
+
+        .element1 {
+            margin-bottom: 20px;
+        }
+
+        .zag {
+            font-size: 20px;
+            margin-top: 60px;
+            flex-grow: 1;
+            text-align: center; 
+        }
+
+        .div2 {
+            flex-basis: 100%;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #003386;
+        }
+
+        .gamburger {
+            font-size: 20px;
+            line-height: 50px;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        span {
+            display: none;
+            margin-top: 10px;
+        }
+
+        #butt {
+            display: none;
+        }
+
+        .main-menu {
+            list-style: none;
+            text-align: center;
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;  
+            flex-wrap: wrap; 
+        }
+
+        .main-menu a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .main-menu p {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .main-menu li {
+            display: inline;
+            margin: 30px;
+        }
+
+        @media (max-width: 560px) {
+            .main-menu {
+                display: none;
+            }
+
+            span {
+                display: inline;
+            }
+
+            #butt:checked ~ .main-menu {
+                display: block;
+            }
+
+            #butt:checked ~ .h2 {
+                display: none;
+            }
+
+            .main-menu li {
+                display: block;
+                margin: 20px 0; 
+            }
+        }
+
+        @media (max-width: 1280px) {
+            img {
+                height: auto;
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .container-wrapper {
+            display: flex;
+            align-items: flex-start; 
+            position: relative; 
+        }
+
+        .cards-container {
+            flex-grow: 1; 
+        }
+
+        </style>
+    </head>
+    <body style="background-color: #bdccf5;">
+        <nav>
+            <input type="checkbox" id="butt">
+            <label for="butt" class="gamburger">
+                <span>
+                    &#8801;
+                </span>
+            </label>
+           
+            <ul class="main-menu">
+                <img src="logob.png" alt="ERROR" style="height: 70px; width: 70px; margin-right: 30px;">
+                <li><a href="/" style="color: azure; margin-left: 30px; margin-right: 30px;">Университет</a></li>
+                <li><a href="/" style="color: azure; margin-left: 30px; margin-right: 30px;">Сотрудникам</a></li>
+                <li><a href="/" style="color: azure; margin-left: 30px; margin-right: 30px;">Студентам</a></li>
+                <li><a href="/" style="color: azure; margin-left: 30px; margin-right: 30px;">Поступающим</a></li>
+                <li><a href="/" style="color: azure; margin-left: 30px; margin-right: 30px;">Выпускникам</a></li>
+                <li><a href="/" style="color: azure; margin-left: 30px; margin-right: 30px;">Войти</a></li>
+            </ul>
+        </nav>
+        <div class="element1" style="display: flex;">
+            <div class="zag" style="font-size: xx-large; font-family: 'Times New Roman', Times, serif; font-weight: bold;">На сайте ведутся технические работы</div>
+        </div>
+        <div class="element2" style="justify-content: center;display: flex; " >
+            <div class="message-container">
+                <p>В ближайшее время сайт станет доступен. Приносим извинения</p>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+            <img src="cran.png" alt="ERROR IMG1" style="width: 500px; height: auto;"> 
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <p style="margin-left: -60%;">Не теряйте нас:</p>   
+        </div>
+        <div class="container-wrapper">
+            <div class="cards-container container my-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5">
+                    <div class="col">
+                        <div class="card">
+                            <img src="students.jpg" class="card-img-top" alt="ERROR">
+                            <div class="card-body">
+                                <h5 class="card-title">НАШ ИНСТАГРАМ</h5>
+                                <p class="card-text">Следите за новостями и переходите по ссылке!</p>
+                                <a href="https://www.instagram.com/bsuir_official/"  target ="_blanck>" class="btn btn-primary">Go!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="vstup.jpg" class="card-img-top" alt="llashowingerror">
+                            <div class="card-body">
+                                <h5 class="card-title">ПРОХОДНЫЕ БАЛЛЫ</h5>
+                                <p class="card-text">Информация для абитуриентов</p>
+                                <a href="https://kudapostupat.by/article/item/id/2762"  target ="_blanck>" class="btn btn-primary">Go!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="ksis.jpeg" class="card-img-top" alt="llashowingerror">
+                            <div class="card-body">
+                                <h5 class="card-title">ОПЛАТА</h5>
+                                <p class="card-text">Актуальные цены на обучение</p>
+                                <a href="https://www.bsuir.by/ru/oplata-obucheniya" target ="_blanck>" class="btn btn-primary">Go!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="rasp.jpg" class="card-img-top" alt="llashowingerror">
+                            <div class="card-body">
+                                <h5 class="card-title">РАСПРЕДЕЛЕНИЕ</h5>
+                                <p class="card-text">Узнайте о распределении студентов</p>
+                                <a href="https://www.bsuir.by/ru/raspredelenie-1-stupeni-obrazovaniya" target ="_blanck>" class="btn btn-primary">Go!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
